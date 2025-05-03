@@ -1,0 +1,292 @@
+/* .propagandas {
+  margin-top: 80px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.propaganda {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.propaganda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Seção produtos */
+.container-produtos {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100vw;
+}
+
+.text-prod {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.categorias {
+  margin-top: 20px;
+  border-bottom: 2px solid goldenrod;
+  border-top: 2px solid goldenrod;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto; /* Adiciona rolagem horizontal */
+  overflow-y: hidden; /* Remove rolagem vertical */
+  scroll-behavior: smooth; /* Rola suavemente */
+  -ms-overflow-style: none; /* Remove a barra de rolagem no IE e Edge */
+  scrollbar-width: none; /* Remove a barra de rolagem no Firefox */
+}
+
+.categorias button {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 10px; /* Espaçamento entre as labels */
+  white-space: nowrap; /* Impede quebra de linha no conteúdo */
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.categorias button:hover {
+  background-color: transparent;
+  color: goldenrod;
+  transform: scale(1.08);
+}
+.checked {
+  color: goldenrod !important;
+  transform: scale(1.08);
+  border: 1px solid goldenrod;
+  box-shadow: 0px 0px 10px gold;
+}
+
+.produtos {
+  min-width: 90vw;
+  min-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-items: center;
+  background-color: white;
+}
+
+.card-produto {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
+
+.imagem-card {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.imagem-card img {
+  width: 80%;
+  max-height: 300px;
+  min-width: 80%;
+}
+
+.lista-produtos {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.lista-produtos div {
+  margin-top: -10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  background-color: rgba(209, 209, 205, 0.209);
+  line-height: 0.9;
+  border-radius: 10px;
+  text-align: justify;
+  overflow: hidden; /* Esconde o texto que ultrapassa a largura */
+  text-overflow: ellipsis; /* Adiciona "..." no final */
+
+  height: 150px;
+}
+
+.lista-produtos div h4 {
+  margin-top: -10px;
+}
+.lista-produtos div h3 {
+  font-size: 15px;
+}
+
+.lista-produtos div p {
+  margin-top: 0;
+  font-size: 10px;
+}
+
+.lista-produtos button {
+  font-size: 15px;
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.lista-produtos button:hover {
+  transform: scale(1.05);
+  background-color: goldenrod;
+  border: none;
+  color: white;
+}
+
+.btn-comprar {
+  border-radius: 0 0 10px 10px;
+}
+
+#fundoPreto {
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.807);
+  top: 0;
+}
+#ProdDetails {
+  border-radius: 2px;
+  border: 5px solid goldenrod;
+  display: flex;
+
+  position: fixed;
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  top: 17%;
+  left: 12%;
+  align-items: center;
+  padding: 10px;
+  contain: content;
+}
+
+.imgProd {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.imgProd img {
+  height: 100%;
+}
+.DIVProd {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  width: 100%;
+
+  padding: 5px;
+}
+.infoProduto {
+  padding: 10px;
+  text-align: start;
+  width: 100%;
+  height: 100%;
+}
+
+.infoProduto h2 {
+  display: flex;
+
+  margin-top: 10px;
+  color: goldenrod;
+}
+.infoProduto h3 {
+  display: flex;
+  font-size: 20px;
+
+  color: rgb(133, 129, 129);
+}
+.infoProduto span {
+  color: goldenrod;
+}
+.infoProduto p {
+  font-weight: 700;
+  color: rgb(133, 129, 129);
+}
+.infoProduto p span {
+  color: goldenrod;
+}
+.infoProduto h3 span {
+  color: goldenrod;
+}
+.infoProduto button {
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.InfoProd2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.InfoProd2 button {
+  border-radius: 0;
+  background-color: transparent;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+}
+
+.InfoProd2 button:hover {
+  border-radius: 0;
+  background-color: goldenrod;
+  color: white;
+  border: 1px solid goldenrod;
+}
+
+.footerProd {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.limitar-texto {
+  white-space: nowrap; /* Impede quebra de linha */
+
+  overflow: hidden; /* Esconde o texto que ultrapassa */
+  text-overflow: ellipsis; /* Coloca "..." no final */
+  max-lines: 3;
+} */

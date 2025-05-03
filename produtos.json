@@ -1,0 +1,24 @@
+{
+  "produtos": [
+    {
+      "nome": "Camiseta Básica teste",
+      "preco": 49.9,
+      "precoCusto": 29.9,
+      "descricao": "Camiseta de algodão com modelagem clássica e conforto para o dia a dia.",
+      "categoria": "Roupas",
+      "tamanho": "M",
+      "parcelas": 3,
+      "img": "https://exemplo.com/imagens/camiseta-basica.jpg"
+    },
+    {
+      "nome": "Camiseta Básica teste2",
+      "preco": 69.9,
+      "precoCusto": 29.9,
+      "descricao": "Camiseta de algodão com modelagem clássica e conforto para o dia a dia.",
+      "categoria": "Roupas",
+      "tamanho": "M",
+      "parcelas": 5,
+      "img": "https://exemplo.com/imagens/camiseta-basica.jpg"
+    }
+  ]
+}

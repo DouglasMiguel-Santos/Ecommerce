@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+.Carrinho {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  right: 0px;
+  position: fixed;
+  top: 0px !important;
+  background-color: white;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 20px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  border-left: 1px solid #ddd;
+  z-index: 9999;
+  padding: 10px;
+  box-shadow: 1px 5px 20px rgba(218, 165, 32, 0.373);
+}
+
+.Div_Maior {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.carrinhoCard {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  width: 95%;
+  height: 130px;
+  justify-content: space-between;
+}
+
+.carrinhoCard img {
+  height: 130px;
+}
+
+.carrinho-produto {
+  padding: 10px;
+  width: 80%;
+  height: 100%;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 80px;
+
+  padding: 25px;
+}
+
+.descricao h1 {
+  margin-top: -10px;
+  font-size: 15px;
+  color: goldenrod;
+}
+
+.descricao h2 {
+  margin-top: -10px;
+  font-size: 15px;
+  font-weight: 400; /* Corrigido valor inválido */
+}
+
+.descricao p {
+  margin-top: -12px;
+  font-size: 13px;
+  color: gray;
+  font-weight: 300; /* Corrigido valor inválido */
+}
+
+.descricao span {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.botoes {
+  display: flex;
+  padding: 3px;
+  height: 25px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.botoes button {
+  display: flex;
+  font-size: 15px;
+  height: 25px;
+  background: none;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+.botoes button:hover {
+  transform: scale(1.05);
+  color: goldenrod;
+  background-color: transparent;
+}
+
+.botoes2 {
+  display: flex;
+}
+
+.informacoes-carrinho {
+  font-family: "Amatic SC", sans-serif;
+  display: flex;
+  line-height: 0.7;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  width: 100%;
+
+  padding: 20px;
+}
+
+.informacoes-carrinho span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -20px;
+  font-weight: 700; /* Corrigido para peso suportado pela fonte */
+}
+
+.informacoes-carrinho p {
+  font-size: 18px;
+}
+
+.informacoes-carrinho h3 {
+  font-size: 20px;
+}
+
+.informacoes-carrinho button {
+  display: flex;
+  text-align: center;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 25px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  width: 100%;
+  transition: transform 0.3s ease; /* Transição aplicada corretamente */
+}
+
+.informacoes-carrinho button:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.02);
+}
+
+.traco {
+  border-bottom: 1px goldenrod dashed;
+  margin-bottom: 10px;
+}
+
+.subtotal {
+  line-height: 0.2;
+  font-size: 15px;
+  text-align: right;
+}
+
+.btn-fecharCarrinho button {
+  height: 30px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.btn-fecharCarrinho button:hover {
+  background-color: transparent;
+  color: rgb(233, 91, 91);
+}
+
+a {
+  margin-top: 1px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+Link {
+  width: 100%;
+}

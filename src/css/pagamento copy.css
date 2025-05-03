@@ -1,0 +1,100 @@
+body {
+  padding: 0;
+}
+.sem-seta::-webkit-inner-spin-button,
+.sem-seta::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .sem-seta {
+  -moz-appearance: textfield;
+} */
+
+section {
+  display: flex;
+  flex-direction: column;
+  top: -50px !important;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 0.3;
+}
+
+.cartao {
+  background-image: url(/img/cartao/cartao1.png);
+  background-size: contain;
+  background-position: center;
+  border: 1px solid rgb(182, 179, 179);
+  width: 300px;
+  height: 190px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.246);
+}
+.visa {
+  color: white;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dadosGerais {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.numeracao {
+  margin-top: 20px;
+  display: flex;
+  height: 30px;
+  border: 1px solid rgb(227, 220, 220);
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.numeracao p {
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+.dadosCartao h3 {
+  font-weight: 300;
+  font-style: italic;
+
+  font-size: 10px;
+}
+.dadosCartao p {
+  font-size: 15px;
+}
+.dadosValidade h3 {
+  font-size: 10px;
+}
+.dadosValidade p {
+  font-size: 15px;
+}
+.FormCartao {
+  line-height: 1.5;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  width: 500px;
+  height: 60%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+}
