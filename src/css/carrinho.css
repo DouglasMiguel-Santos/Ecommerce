@@ -35,11 +35,9 @@
 
 .carrinhoCard {
   display: flex;
-  align-items: center;
-  padding: 0px;
-  width: 95%;
   height: 130px;
-  justify-content: space-between;
+  width: 95%;
+  justify-self: auto;
 }
 
 .carrinhoCard img {
@@ -47,7 +45,6 @@
 }
 
 .carrinho-produto {
-  padding: 10px;
   width: 80%;
   height: 100%;
 }
@@ -55,27 +52,26 @@
 .descricao {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  height: 80px;
-
-  padding: 25px;
+  width: 100%;
+  height: 80%;
+  padding: 5px;
 }
 
 .descricao h1 {
-  margin-top: -10px;
-  font-size: 15px;
+  margin-top: -5px;
+  font-size: 18px;
   color: goldenrod;
+  height: 20px;
+  overflow: hidden;
 }
 
 .descricao h2 {
-  margin-top: -10px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400; /* Corrigido valor inválido */
 }
 
 .descricao p {
-  margin-top: -12px;
-  font-size: 13px;
+  font-size: 15px;
   color: gray;
   font-weight: 300; /* Corrigido valor inválido */
 }
@@ -84,16 +80,18 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  margin-top: -10px;
 }
 
 .botoes {
   display: flex;
-  padding: 3px;
+
   height: 25px;
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .botoes button {

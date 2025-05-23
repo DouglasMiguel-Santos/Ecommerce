@@ -86,11 +86,6 @@ export default function Carrinho() {
     }
   }
 
-  // FECHAR O MODAL DO CARRINHO ---------------------------------------------------
-
-  // function FecharCarrinho() {
-  //   setVisivel(false); // Define como fechado
-  // }
   //---------------------------------------------------------------------------------
   return (
     <section

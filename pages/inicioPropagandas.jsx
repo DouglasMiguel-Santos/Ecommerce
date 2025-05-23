@@ -63,13 +63,6 @@ function InicioPropagandas() {
     return Produtos;
   };
 
-  // useEffect(() => {
-  //   fetchCategorias();
-  // }, []);
-  // const fetchCategorias = async () => {
-  //   const { data } = supabase.from("produtos").select("categoria");
-  //   setCategoria(data);
-  // };
   //-------------------------------------------------------------------------------------------------------
   //FUNCAO PARA ADD UM ITEM AO BANCO CARRINHO
   async function AddCarrinho(id) {
@@ -135,11 +128,6 @@ function InicioPropagandas() {
     }
   }
   //-------------------------------------------------------------------------------------------------------
-  // const propagandas = [
-  //   { id: 1, img: "../img/propagando1.jpg", alt: "propaganda1" },
-  //   { id: 2, img: "../img/propaganda2.jpg", alt: "propaganda2" },
-  //   { id: 3, img: "../img/propaganda3.jpg", alt: "propaganda3" },
-  // ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -324,7 +312,9 @@ function InicioPropagandas() {
             </div>
             <article className="DIVProd">
               <div className="infoProduto">
-                <h2 style={{ fontSize: "30px" }}>{ProdDet[0].nome}</h2>
+                <h2 style={{ fontSize: "30px" }}>
+                  {ProdDet[0].nome.toUpperCase()}
+                </h2>
                 <p
                   style={{
                     fontSize: "12px",
@@ -334,26 +324,27 @@ function InicioPropagandas() {
                     boxShadow: "5px 5px 10px #0000005f",
                   }}
                 >
-                  {ProdDet[0].descricao}
+                  {ProdDet[0].descricao.to()}
                 </p>
                 <div style={{ lineHeight: "0.5" }}>
                   <h3>
                     <span>R${ProdDet[0].preco.toFixed(2)}</span>
                   </h3>
                   <p>
-                    Marca: <span> {ProdDet[0].marca}</span>
+                    Marca: <span> {ProdDet[0].marca.toUpperCase()}</span>
                   </p>
                   <p>
-                    Material: <span>{ProdDet[0].material}</span>
+                    Material: <span> {ProdDet[0].material.toUpperCase()}</span>
                   </p>
                   <p>
-                    Tamanhos disponiveis: <span>{ProdDet[0].tamanho}</span>
+                    Tamanhos disponiveis:
+                    <span> {ProdDet[0].tamanho.toUpperCase()}</span>
                   </p>
                   <p>
                     Dimensões: <span>{ProdDet[0].dimensoes}</span>
                   </p>
                   <p>
-                    Categoria: <span>{ProdDet[0].categoria}</span>{" "}
+                    Categoria: <span>{ProdDet[0].categoria}</span>
                   </p>
                   {ProdDet[0].cor}
                 </div>
